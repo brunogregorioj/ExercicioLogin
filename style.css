@@ -1,0 +1,87 @@
+:root {
+    --primary-color: #008000;
+    --secondary-color: #f0f0f0;
+    --tertiary-color: #e0e0e0;
+    --montserrat: "Montserrat";
+    --poppins: "Poppins";
+  }
+  
+  header {
+    background-color: var(--primary-color);
+    padding: 20px 0;
+    text-align: center;
+  }
+  body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    font-family: var(--poppins);
+    font-weight: 100px;
+
+    overflow: overlay;
+  }
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  footer {
+    background-color: var(--primary-color);
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .login {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 10px;
+    flex-direction: column;
+  }
+ 
+   .cadastro {
+    background-color: var(--tertiary-color);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .curriculo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .foto {
+    width: 150px;
+    margin-right: 20px;
+  }
+  
+  .dados-pessoais {
+    flex: 1;
+  }
+  
+  .experiencias {
+    flex: 1;
+  }
+  
+  .experiencias ol {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .experiencias li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+  }
+  

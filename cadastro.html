@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastro</h1>
+    </header>
+
+    <main>
+        <section class="cadastro">
+            <h2>Crie sua conta</h2>
+            <form id="cadastroForm">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="dataNascimento">Data de Nascimento:</label>
+                <input type="date" id="dataNascimento" name="dataNascimento" required>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+                <label for="confirmaSenha">Confirmar Senha:</label>
+                <input type="password" id="confirmaSenha" name="confirmaSenha" required>
+                <button type="submit">Cadastrar</button>
+                <p><a href="index.html">Já possui conta? Faça login!</a></p>
+            </form>
+        </section>
+        <a href="index.html">Voltar para a Home Page</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Trabalho Login</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
