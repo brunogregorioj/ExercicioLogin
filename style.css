@@ -1,100 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root {
-  --primary-color: #008000;
-  --secondary-color: #f0f0f0;
-  --tertiary-color: #e0e0e0;
-  --montserrat: "Montserrat";
-  --poppins: "Poppins";
+    --bg-color: #201b2c;
+    --roboto: "Roboto", sans-serif;
 }
-
-
 
 body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: #fff;
-  font-size: 1rem;
-  text-align: center;
-  font-family: var(--poppins);
-  font-weight: 100px;
-  overflow: overlay;
+    margin: 0;
+    font-family: var(--roboto);
 }
 
-main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.login {
-  background-color: var(--secondary-color);
-  padding: 20px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.left-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.login > div {
-  margin-bottom: 10px;
+.left-login>h1 {
+    color: #77ffc0;
 }
 
-.login label {
-  margin-bottom: 5px;
+.left-login-img {
+    width: 35vw;
 }
 
-.login button {
-  margin-top: 10px;
+.right-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.cadastro {
-  background-color: var(--tertiary-color);
-  padding: 20px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.card-login {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
 }
 
-.cadastro > div {
-  margin-bottom: 10px;
+.card-login>h1 {
+    color: #00ff88;
+    font-weight: 800;
+    margin: 0;
 }
 
-.cadastro label {
-  margin-bottom: 5px;
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
 }
 
-.cadastro input[type="text"],
-.cadastro input[type="email"],
-.cadastro input[type="password"],
-.cadastro input[type="url"],
-.cadastro select {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+.textfield>input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: #f0ffffde;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
 }
 
-.cadastro button {
-  padding: 10px 20px;
-  background-color: var(--primary-color);
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.textfield>label {
+    color: #f0ffffde;
+    margin-bottom: 10px;
 }
 
-.cadastro button[type="button"] {
-  background-color: #333;
+.textfield>input::placeholder {
+    color: #f0ffff94;
 }
 
-.cadastro button:hover {
-  background-color: #005000;
+.btn-login {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2b134b;
+    background: #00ff88;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
 }
 
-.cadastro button[type="reset"]:hover {
-  background-color: #999;
+.btn-cadastro {
+    color: #f0ffff94;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    box-shadow: 0px 10px 40px -12px #f0ffff94;
 }
