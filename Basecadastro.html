@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastro</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>CADASTRO</h2>
+            <form id="cadastroForm" onsubmit="return validarFormulario()">
+                <div class="form-group">
+                    <label for="login">Login:</label>
+                    <input type="text" id="login" name="login" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="dataNascimento">Data de Nascimento:</label>
+                    <input type="date" id="dataNascimento" name="dataNascimento" required>
+                </div>
+                <div class="form-group">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmarSenha">Confirmar Senha:</label>
+                    <input type="password" id="confirmarSenha" name="confirmarSenha" required>
+                </div>
+                <div class="form-group">
+                    <label for="sexo">Sexo:</label>
+                    <select id="sexo" name="sexo" required>
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade" required>
+                </div>
+                <div class="form-group">
+                    <label for="homepage">Home-page:</label>
+                    <input type="url" id="homepage" name="homepage">
+                </div>
+                <div class="form-group">
+                    <label>Interesses:</label>
+                    <div>
+                        <input type="checkbox" id="musica" name="interesse" value="musica">
+                        <label for="musica">Música</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="esporte" name="interesse" value="esporte">
+                        <label for="esporte">Esporte</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="moda" name="interesse" value="moda">
+                        <label for="moda">Moda</label>
+                    </div>
+                </div>
+                <button type="button" onclick="limparFormulario()">Limpar</button>
+                <button type="submit">Cadastrar</button>
+            </form>
+            <a href="index.html">Voltar para a Home Page</a>
+        </div>
+            
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
