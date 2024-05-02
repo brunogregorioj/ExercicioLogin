@@ -2,6 +2,21 @@
 
 :root {
     --bg-color: #201b2c;
+    --primary-color: #77ffc0;
+    --secondary-color: #00ff88;
+    --text-color: #f0ffffde;
+    --placeholder-color: #f0ffff94;
+    --button-text-color: #2b134b;
+    --button-bg-color: #00ff88;
+    --button-shadow-color: #00ff8052;
+    --textfield-bg-color: #514869;
+    --textfield-shadow-color: #00000056;
+    --card-bg-color: #2f2841;
+    --card-shadow-color: #00000056;
+    --link-color: #f0ffff94;
+    --link-shadow-color: #f0ffff94;
+    --link-hover-color: #77ffc0;
+    --link-hover-shadow-color: #77ffc0;
     --roboto: "Roboto", sans-serif;
 }
 
@@ -9,7 +24,6 @@ body {
     margin: 0;
     font-family: var(--roboto);
 }
-
 .main-login {
     width: 100vw;
     height: 100vh;
@@ -29,7 +43,7 @@ body {
 }
 
 .left-login>h1 {
-    color: #77ffc0;
+    color: var(--primary-color);
 }
 
 .left-login-img {
@@ -53,11 +67,11 @@ body {
     padding: 30px 35px;
     background: #2f2841;
     border-radius: 20px;
-    box-shadow: 0px 10px 40px #00000056;
+    box-shadow: 0px 10px 40px var(--card-shadow-color);
 }
 
 .card-login>h1 {
-    color: #00ff88;
+    color: var(--secondary-color);
     font-weight: 800;
     margin: 0;
 }
@@ -76,20 +90,20 @@ body {
     border: none;
     border-radius: 10px;
     padding: 15px;
-    background: #514869;
-    color: #f0ffffde;
-    box-shadow: 0px 10px 40px #00000056;
+    background: var(--textfield-bg-color);
+    color: var(--text-color);
+    box-shadow: 0px 10px 40px var(--textfield-shadow-color);
     outline: none;
     box-sizing: border-box;
 }
 
 .textfield>label {
-    color: #f0ffffde;
+    color: var(--text-color);
     margin-bottom: 10px;
 }
 
 .textfield>input::placeholder {
-    color: #f0ffff94;
+    color: var(--placeholder-color);
 }
 
 .btn-login {
@@ -102,16 +116,145 @@ body {
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 3px;
-    color: #2b134b;
-    background: #00ff88;
+    color: var(--button-text-color);
+    background: var(--button-bg-color);
     cursor: pointer;
-    box-shadow: 0px 10px 40px -12px #00ff8052;
+    box-shadow: 0px 10px 40px -12px var(--button-shadow-color);
 }
 
-.btn-cadastro {
-    color: #f0ffff94;
+.btn-cadastro-login {
+    text-align: center; 
+    color: var(--link-color);
     cursor: pointer;
     outline: none;
     text-decoration: none;
-    box-shadow: 0px 10px 40px -12px #f0ffff94;
+    box-shadow: 0px 10px 40px -12px var(--link-shadow-color);
+}
+
+.btn-cadastro-login:hover {
+    color: var(--link-hover-color);
+    box-shadow: 0px 10px 40px -12px var(--link-hover-shadow-color);
+}
+
+/* ========== Estilos para a página de cadastro ========== */
+.main-cadastro {
+    /* width: 100vw;
+    height: 100vh; */
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .left-cadastro {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+
+/* .left-cadastro>h1 {
+    color: var(--primary-color);
+}
+
+.left-cadastro-img {
+    width: 35vw;
+}
+
+.right-cadastro {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.card-cadastro {
+    max-width: 800px; 
+    width: 90%; 
+    margin: 0 auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px 65px;
+    background: var(--card-bg-color);
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px var(--card-shadow-color);
+}
+
+.card-cadastro>h1 {
+    color: var(--secondary-color);
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield-cadastro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield-cadastro>input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: var(--textfield-bg-color);
+    color: var(--text-color);
+    box-shadow: 0px 10px 40px var(--textfield-shadow-color);
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield-cadastro>label {
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.textfield-cadastro>input::placeholder {
+    color: var(--placeholder-color);
+}
+
+.btn-cadastro {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: var(--button-text-color);
+    background: var(--button-bg-color);
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px var(--button-shadow-color);
+}
+
+.btn-limpar {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: var(--link-color);
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    box-shadow: 0px 10px 40px -12px var(--link-shadow-color);
+}
+
+.btn-voltar {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    color: var(--link-color);
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    box-shadow: 0px 10px 40px -12px var(--link-shadow-color);
 }

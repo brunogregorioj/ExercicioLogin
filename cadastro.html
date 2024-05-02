@@ -5,67 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Meu Currículo</title>
+    <title>Meu Currículo - Cadastro</title>
 </head>
+
 <body>
-    <div class="main-login">
-        <div class="left-login">
-            <h1>Cadastrar-se<br> E veja o seu currículo</h1>
-            <img src="/assets/Ilustracao.svg" class="left-login-img" alt="imagem de um rapaz mexendo em um quadro">
+    <div class="main-cadastro"> 
+        <div class="left-cadastro"> 
         </div>
-        <div class="right-login">
-            <div class="card-login">
+        <div class="right-cadastro"> 
+            <h1>Cadastrar-se<br> E veja o seu currículo</h1>
+            <img src="/assets/Ilustracao.svg" class="left-cadastro-img" alt="imagem de um rapaz mexendo em um quadro"> <!-- Mudando a classe para left-cadastro-img -->
+            <div class="card-cadastro"> 
                 <h1>Cadastro</h1>
-                <div class="textfield">
+                <div class="textfield-cadastro"> 
                     <label for="usuario">Usuário</label>
                     <input type="text" name="usuario" placeholder="Usuário">
                 </div>
-                <div class="textfield">
-                    <label for="usuario">Email</label>
+                <div class="textfield-cadastro"> 
+                    <label for="email">Email</label>
                     <input type="email" name="email" placeholder="Email">
                 </div>
-                <div class="textfield">
-                    <label for="usuario">Data de Nascimento</label>
+                <div class="textfield-cadastro"> 
+                    <label for="dataNascimento">Data de Nascimento</label>
                     <input type="date" name="dataNascimento" placeholder="Data de Nascimento">
                 </div>
-                <div class="textfield">
+                <div class="textfield-cadastro"> 
                     <label for="senha">Senha</label>
                     <input type="password" name="senha" placeholder="Senha">
                 </div>
-                <div class="textfield">
-                    <label for="senha">Confirmar Senha</label>
+                <div class="textfield-cadastro"> 
+                    <label for="confirmarSenha">Confirmar Senha</label>
                     <input type="password" name="confirmarSenha" placeholder="Confirmar Senha">
                 </div>
-                <div class="textfield">
-                    <label class="textfield" for="sexo">Sexo</label>
+                <div class="textfield-cadastro"> 
+                    <label for="sexo">Sexo</label>
                     <select name="sexo" required>
                         <option value="masculino">Masculino</option>
                         <option value="feminino">Feminino</option>
                         <option value="outro">Outro</option>
                     </select>
-                </div>
-                <label class="textfield">Interesses:</label>
-                <div>
-                    <input type="checkbox"  name="interesse" value="musica">
+                </div class="textfield-cadastro">
+                <label>Interesses:</label>
+                <div class="textfield-cadastro">
+                    <input type="checkbox" name="interesse" value="musica">
                     <label for="musica">Música</label>
-                </div>
-                <div>
-                    <input type="checkbox"  name="interesse" value="esporte">
+                </div >
+                <div class="textfield-cadastro">
+                    <input type="checkbox" name="interesse" value="esporte">
                     <label for="esporte">Esporte</label>
                 </div>
-                <div>
+                <div class="textfield-cadastro">
                     <input type="checkbox" id="moda" name="interesse" value="moda">
                     <label for="moda">Moda</label>
                 </div>
-                <div class="textfield">
-                    <label for="senha">Senha</label>
-                    <input type="password" name="senha" placeholder="Senha">
-                </div>
-                <button class="btn-login">Cadastrar</button>
-                <p><a  class='btn-cadastro' onclick="limparFormulario()">Limpar</a></p>
-                <p><a  class='btn-cadastro'href="index.html">Voltar ao Home</a></p>
+                <button class="btn-cadastro">Cadastrar</button> 
+                <p><a class='btn-limpar' onclick="limparFormulario()">Limpar</a></p> 
+                <p><a class='btn-voltar' href="index.html">Voltar ao Home</a></p> 
             </div>
         </div>
     </div>
 </body>
+
 </html>
