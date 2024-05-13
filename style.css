@@ -8,7 +8,7 @@
     --placeholder-color: #f0ffff94;
     --button-text-color: #2b134b;
     --button-bg-color: #ff6f6f; 
-    --button-shadow-color: #f5323252; 
+    --button-shadow-color: #ff6f6f52; 
     --textfield-bg-color: #514869;
     --textfield-shadow-color: #00000056;
     --card-bg-color: #2f2841;
@@ -262,8 +262,19 @@ body {
 }
 
 .header-curriculo {
-    border-bottom: 1px solid #443a53;
     width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: var(--text-color);
+    background: var(--bg-color);
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px var(--button-shadow-color);
 }
 
 .main-curriculo {
@@ -279,12 +290,12 @@ body {
 
 .aside-curriculo {
     width: 90vw !important;
-    background-color: #443a53;
+    background-color:var(--bg-color);
     color: white;
 }
 
 .pessoal-curriculo {
-    background-color: #372e43;
+    background-color:var(--card-bg-color);
 }
 
 .img-curriculo {
@@ -327,16 +338,20 @@ body {
 }
 
 .btn-voltar-curriculo {
-    font-size: large;
-    display: flex;
-    text-align: center;
-    margin-top: 20px;
-    padding-left: 350px;
-    color: var(--bg-color);
-    cursor: pointer;
+    width: 100%;
+    padding: 16px 0px;
+    margin: 300px;
+    border: none;
+    border-radius: 8px;
     outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: var(--text-color);
+    background: var(--bg-color);
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px var(--button-shadow-color);
     text-decoration: none;
-    box-shadow: 0px 10px 40px -12px var(--link-shadow-color);
 }
 .btn-voltar-curriculo:hover{
     color: var(--link-hover-shadow-color);
