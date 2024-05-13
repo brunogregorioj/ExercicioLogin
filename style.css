@@ -258,3 +258,72 @@ body {
     text-decoration: none;
     box-shadow: 0px 10px 40px -12px var(--link-shadow-color);
 }
+
+.body-curriculo {
+    width: 100vw !important;
+}
+
+.header-curriculo {
+    border-bottom: 1px solid #443a53;
+    width: 100%;
+}
+
+.main-curriculo {
+    display: flex;
+    flex-direction: row;
+}
+
+.photo-curriculo {
+    height: 200px;
+    width: auto;
+    object-fit: cover;
+}
+
+.aside-curriculo {
+    width: 90vw !important;
+    background-color: #443a53;
+    color: white;
+}
+
+.pessoal-curriculo {
+    background-color: #372e43;
+}
+
+.img-curriculo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.title-curriculo {
+    padding: 0px 20px;
+}
+
+.job-curriculo {
+    padding: 0px 20px;
+}
+
+.sub-title-curriculo {
+    padding: 8px 20px;
+}
+
+.field-curriculo {
+    padding: 8px 20px;
+    margin: 18px 0px 0px 0px;
+}
+
+.description-curriculo {
+    padding: 0px 20px;
+    margin: 0px 0px 18px 0px;
+}
+
+.resumo-curriculo {
+    padding: 20px;
+}
+
+.xp-profissional {
+    padding: 20px;
+    margin: 0px;
+    border-bottom: 1px solid #443a53;
+    border-top: 1px solid #443a53;
+}
