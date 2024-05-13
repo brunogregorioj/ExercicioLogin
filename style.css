@@ -2,24 +2,25 @@
 
 :root {
     --bg-color: #201b2c;
-    --primary-color: #77ffc0;
-    --secondary-color: #00ff88;
+    --primary-color: #ff6f6f; 
+    --secondary-color: #ff6f6f;
     --text-color: #f0ffffde;
     --placeholder-color: #f0ffff94;
     --button-text-color: #2b134b;
-    --button-bg-color: #00ff88;
-    --button-shadow-color: #00ff8052;
+    --button-bg-color: #ff6f6f; 
+    --button-shadow-color: #f5323252; 
     --textfield-bg-color: #514869;
     --textfield-shadow-color: #00000056;
     --card-bg-color: #2f2841;
     --card-shadow-color: #00000056;
     --link-color: #f0ffff94;
     --link-shadow-color: #f0ffff94;
-    --link-hover-color: #77ffc0;
-    --link-hover-shadow-color: #77ffc0;
+    --link-hover-color: #ff6f6f;
+    --link-hover-shadow-color: #ff6f6f;
     --roboto: "Roboto", sans-serif;
 }
 
+/* ========== Estilos para a página de login ========== */
 body {
     margin: 0;
     font-family: var(--roboto);
@@ -138,48 +139,25 @@ body {
 
 /* ========== Estilos para a página de cadastro ========== */
 .main-cadastro {
-    /* width: 100vw;
-    height: 100vh; */
     background-color: var(--bg-color);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* .left-cadastro {
-    width: 50vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-} */
-
-/* .left-cadastro>h1 {
+.cadastro-title{
     color: var(--primary-color);
 }
 
-.left-cadastro-img {
-    width: 35vw;
-}
-
-.right-cadastro {
-    width: 50vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
 .card-cadastro {
-    max-width: 800px; 
+    max-width: 900px; 
     width: 90%; 
-    margin: 0 auto; 
+    margin: 20px; 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 60px 65px;
+    padding: 5px 55px;
     background: var(--card-bg-color);
     border-radius: 20px;
     box-shadow: 0px 10px 40px var(--card-shadow-color);
@@ -200,7 +178,8 @@ body {
     margin: 10px 0px;
 }
 
-.textfield-cadastro>input {
+.textfield-cadastro input,
+.textfield-cadastro select { 
     width: 100%;
     border: none;
     border-radius: 10px;
@@ -212,14 +191,32 @@ body {
     box-sizing: border-box;
 }
 
-.textfield-cadastro>label {
+.textfield-cadastro label { 
     color: var(--text-color);
     margin-bottom: 10px;
 }
 
-.textfield-cadastro>input::placeholder {
+.textfield-cadastro input::placeholder { 
     color: var(--placeholder-color);
 }
+
+.textfield-cadastro.sexo-field label {
+    color: var(--text-color); 
+    margin-bottom: 10px; 
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 5px; 
+    gap: 20px;
+    
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 10px; 
+}
+
 
 .btn-cadastro {
     width: 100%;
@@ -259,6 +256,7 @@ body {
     box-shadow: 0px 10px 40px -12px var(--link-shadow-color);
 }
 
+/* ========== Estilos para a página de curriculo ========== */
 .body-curriculo {
     width: 100vw !important;
 }
@@ -326,4 +324,20 @@ body {
     margin: 0px;
     border-bottom: 1px solid #443a53;
     border-top: 1px solid #443a53;
+}
+
+.btn-voltar-curriculo {
+    font-size: large;
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+    padding-left: 350px;
+    color: var(--bg-color);
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    box-shadow: 0px 10px 40px -12px var(--link-shadow-color);
+}
+.btn-voltar-curriculo:hover{
+    color: var(--link-hover-shadow-color);
 }
