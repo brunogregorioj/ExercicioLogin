@@ -1,5 +1,5 @@
 ## Currículo Online - README.md
-
+![Dashboard Screenshot](/assets/Exercicio_login.png.png)
 **Projeto:** Currículo Online
 
 Este projeto foi desenvolvido como um exercício acadêmico para o curso de **Análise e Desenvolvimento de Sistemas** na **Universidade UNA**.
