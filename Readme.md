@@ -1,6 +1,6 @@
 ## Currículo Online - README.md
 <p align="center">
-  <img src="/assets/Exercicio_login.png.png" alt="Imagem do projeto">
+  <img src="/assets/Exercicio_login.png" alt="Imagem do projeto">
 </p>
 **Projeto:** Currículo Online
 
