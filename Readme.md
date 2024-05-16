@@ -53,10 +53,10 @@ Este projeto está licenciado sob a licença MIT: [https://opensource.org/licens
 **Colaboradores**
 
 
-Ana Vitória Dos Santos Silva
-Bruno Henrique Gregório
-Marlon Lenoir
-Renata Reis Marinho
-Samuel Rocha
-Thulio Martins Ferreira
+* **Ana Vitória Dos Santos Silva
+* **Bruno Henrique Gregório
+* **Marlon Lenoir
+* **Renata Reis Marinho
+* **Samuel Rocha
+* **Thulio Martins Ferreira
   
